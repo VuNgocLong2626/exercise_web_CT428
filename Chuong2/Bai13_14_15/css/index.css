@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+    color: chocolate;
+    margin: 20px 40px;
+}
+
+.container{
+    margin: 40px;
+    display: block;
+}
+
+.info-avatar { 
+    display: flex;
+    flex-direction: row;
+}
+
+.img-avatar{
+    margin-right: 25px;
+}
+
+.img-avatar img{
+    border: solid 2px black;
+    border-radius: 20px;
+    max-width: 150px;
+    display: inherit;
+}
+
+.full-name {
+    display: inline-flex;
+    color: chocolate;
+}
+
+.full-name h3{
+     align-self: flex-end;
+}
+
+.informatin{
+    margin-top: 50px;
+}
+
+.informatin p{
+    margin : 5px 0;
+}
+
+.informatin i{
+    margin : 5px 0;
+}
+
+.contact {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.contact ul{
+    margin-top: 20px;
+    margin-left: 30px;
+    list-style: circle;
+}
+
+nav {
+    margin: 40px;
+}
+
+nav ul{
+    margin: 10px 30px;
+}
+
+hr {
+    width: 95%;
+    margin: auto;
+}
+
+footer{
+    margin-top: 10px;
+    margin-left: 40px;
+    color: gray;
+    font-style: italic;
+}
+
+a:hover{
+    color: red;
+    text-decoration: none;
+    background-color: skyblue;
+}
+a:active{
+    background-color: rgb(243, 19, 19);
+    color: yellow;
+}
+
+a:visited{
+    color: black;
+    text-decoration: underline;
+}
