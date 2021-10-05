@@ -224,15 +224,8 @@ footer li{
     margin: auto;
 }
 
-.from-detail{
-    /* overflow: auto; */
-    margin: auto;
-    height: 100%;
-    width: 60%;
-    background-color: #f1f1f1;
-    border-radius: 50px;
-}
-
-.from-detail:hover{
-    box-shadow:0 3px 10px 0 rgba(0, 0, 0, 0.6);
+from-detail{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
