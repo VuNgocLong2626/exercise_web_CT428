@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    /* font-family: 'Times New Roman', Times, serif; */
+}
+
+header{
+    background-color: #f1f1f1;
+    font-weight: bolder;
+    overflow: auto;
+    display: inline;
+}
