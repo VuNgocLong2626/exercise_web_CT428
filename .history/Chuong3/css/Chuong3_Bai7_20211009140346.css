@@ -1,0 +1,19 @@
+.from-check {
+  overflow: auto;
+  background-color: #f1f1f1;
+  width: 35%;
+  margin: auto;
+  font-size: 25px;
+  padding: 50px;
+}
+
+.from-check input {
+  height: 30px;
+  width: 50%;
+  font-size: 20px;
+}
+
+.btn{
+  margin: auto;
+  height: 50px;
+}

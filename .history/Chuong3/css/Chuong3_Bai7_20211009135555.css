@@ -1,0 +1,10 @@
+.from-check {
+  background-color: #f1f1f1;
+  width: 50%;
+  margin: auto;
+  font-size: 20px;
+}
+
+.from-check input {
+  height: 30px;
+}
