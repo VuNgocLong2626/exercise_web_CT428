@@ -50,7 +50,7 @@ function getAllSach(mshh, tensach, quycach, gia, soluong, maloaihang) {
   document.getElementById("quycach").value = quycach;
   document.getElementById("gia").value = gia;
   document.getElementById("soluong").value = soluong;
-  document.getElementById('maloai').value=maloaihang;
+  document.getElementById('maloai').options.selectedIndex=maloaihang;
 }
 function checkFileImage() {
   var maso = document.getElementById("mshh").value;

@@ -14,7 +14,7 @@
         </div>
         <div class="mb-3">
             <label for="" class="form-label">Loại sách</label>
-            <select class="form-select" name="maloai" id="maloai">
+            <select class="form-select" name="maloai">
                 <?php
                     $result = $conn->query("SELECT * FROM loaihanghoa");
                     $i=1;
@@ -64,7 +64,7 @@
         <tbody>
 
 <?php
-    $result = $conn->query("SELECT h.MSHH, h.MaLoaiHang, h.TenHH, hh.TenHinh, lh.TenLoaiHang, h.QuyCach, h.Gia, h.SoluongHang FROM `hanghoa` h JOIN `hinhminhhoa` hh ON hh.MSHH = h.MSHH JOIN `loaihanghoa` lh ON h.MaLoaiHang = lh.MaLoaiHang");
+    $result = $conn->query("SELECT h.MSHH,h.MaLoaiHang , h.TenHH, hh.TenHinh, lh.TenLoaiHang, h.QuyCach, h.Gia, h.SoluongHang FROM `hanghoa` h JOIN `hinhminhhoa` hh ON hh.MSHH = h.MSHH JOIN `loaihanghoa` lh ON h.MaLoaiHang = lh.MaLoaiHang");
     $i=1;
     while($row = $result->fetch_assoc()){
         echo '<tr>

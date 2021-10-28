@@ -16,7 +16,7 @@
     $decoded = json_decode($content, true);
     $id = $decoded['id'];
     $username = $decoded['username'];
-    $k = ["id" => $id,"name" => $username];
+    $k = ["id" => $id,"name" => $username, "last"=>$last];
     $l = json_encode($k, JSON_PRETTY_PRINT);
     echo $l;
 ?>

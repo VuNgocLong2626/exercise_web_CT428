@@ -26,9 +26,7 @@ function postData(){
       })
       .then((response) => response.text())
       .then((data) => {
-          var obj = JSON.parse(data);
-          console.log(obj.name);
-          console.log(data);
+          console.log(data.username);
         // var obj = JSON.parse(data);
         // var k = obj.username;
         // console.log(obj);

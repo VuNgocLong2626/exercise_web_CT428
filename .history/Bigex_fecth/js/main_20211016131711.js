@@ -28,7 +28,6 @@ function postData(){
       .then((data) => {
           var obj = JSON.parse(data);
           console.log(obj.name);
-          console.log(data);
         // var obj = JSON.parse(data);
         // var k = obj.username;
         // console.log(obj);

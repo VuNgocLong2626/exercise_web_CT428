@@ -14,7 +14,7 @@
         </div>
         <div class="mb-3">
             <label for="" class="form-label">Loại sách</label>
-            <select class="form-select" name="maloai" id="maloai">
+            <select class="form-select" name="maloai">
                 <?php
                     $result = $conn->query("SELECT * FROM loaihanghoa");
                     $i=1;
