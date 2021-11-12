@@ -5,13 +5,14 @@ show tables;
 
 select * from loaihanghoa;
 drop table loaihanghoa;
+delete from loaihanghoa where MaLoaiHang = 'test';
 CREATE TABLE `loaihanghoa`  (
   `MaLoaiHang` varchar(11) NOT NULL unique,
   `TenLoaiHang` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NULL DEFAULT NULL unique,
   PRIMARY KEY (`MaLoaiHang`)
 );
 
-delete from hanghoa where MSHH='b';
+delete from hanghoa where MSHH='test001';
 select * from hanghoa;
 drop table hanghoa;
 CREATE TABLE `hanghoa`  (
@@ -37,6 +38,8 @@ CREATE TABLE `hinhhanghoa`(
 	CONSTRAINT `fk_MSHH_MSHH_hanghoa` FOREIGN KEY (`MSHH`) REFERENCES `hanghoa` (`MSHH`) ON DELETE RESTRICT ON UPDATE CASCADE
 );
 
+
+select * from hinhhanghoa;
 CREATE TABLE `nhanvien`  (
   `MSNV` varchar(11) NOT NULL,
   `HoTenNV` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NULL DEFAULT NULL,
@@ -71,6 +74,7 @@ CREATE TABLE `diachikh`  (
   CONSTRAINT `fk_MSKH_KhachHang_DiaChi` FOREIGN KEY (`MSKH`) REFERENCES `khachhang` (`MSKH`) ON DELETE RESTRICT ON UPDATE RESTRICT
 );
 
+delete from dathang where SoDonDH = 6;
 select * from dathang;
 drop table dathang;
 CREATE TABLE `dathang`  (
@@ -99,3 +103,4 @@ CREATE TABLE `chitietdathang`  (
   CONSTRAINT `fk_SoDonHH_DatHang_ChiTiet` FOREIGN KEY (`SoDonDH`) REFERENCES `dathang` (`SoDonDH`) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
+SELECT * FROM HANGHOA hh JOIN HinhHangHoa hhh ON hh.MSHH = hhh.MSHH WHERE  hh.MSHH=''

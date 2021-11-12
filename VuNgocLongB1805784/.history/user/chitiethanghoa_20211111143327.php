@@ -6,7 +6,7 @@
             $row = $result->fetch_assoc();
             echo '
                 <div class="col-4">
-                    <img src="../admin/uploads/'.$row["TenHinh"].'" alt="" style="height: 450px;width: 330px; border-radius: 50px 0 0 50px">
+                    <img src="../admin/uploads/'.$row["TenHinh"].'" alt="" style="height: 400px;width: 330px; border-radius: 50px 0 0 50px">
                 </div>
                 <div class="col-8">
                     <h4 style="font-weight: bold;margin-top: 15px;">' .$row["TenHH"]. '</h4>

@@ -17,7 +17,7 @@ function postData(){
         //     username: 'Long',
         //     id : 2
         // }),
-        body:JSON.stringify(object),  
+        body:JSON.stringify(object),  //Object convert JOSN
         headers : { 
             'Content-Type': 'application/json',
             'Accept': 'application/json'
@@ -26,7 +26,7 @@ function postData(){
       })
       .then((response) => response.text())
       .then((data) => {
-          var obj = JSON.parse(data);
+          var obj = JSON.parse(data); //JSON convert Object
           console.log(obj.name);
           console.log(data);
         // var obj = JSON.parse(data);

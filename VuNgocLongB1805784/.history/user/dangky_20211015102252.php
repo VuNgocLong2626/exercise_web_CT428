@@ -1,5 +1,5 @@
 <div class="from-register">
-    <form name="dangky" method="post" action="process/process_dangnhap_dangxuat.php">
+    <form name="dangky" method="post" action="process_dangnhap_dangxuat.php">
         <div class="mb-3">
             <label for="" class="form-label">Họ và tên</label>
             <input type="text" class="form-control" id="Hten" name="Hten">

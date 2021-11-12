@@ -66,7 +66,7 @@
             $i=1;
             while($row = $result->fetch_assoc()){
                 echo '<div class="books">
-                        <form action="process/process_giohang.php?mshh='.$row["MSHH"].'" method="POST">
+                        <form action="./process_giohang.php?mshh='.$row["MSHH"].'" method="POST">
                             <div class="card" style="width: 100%; border: none; background-color: #f1f1f1;">
                                 <div>
                                     <img src="../admin/uploads/'.$row["TenHinh"].'" alt="..." style="height: 250px;width: 80%;margin-left: 30px; margin-top: 10px;">

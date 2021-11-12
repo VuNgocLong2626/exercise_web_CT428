@@ -22,6 +22,7 @@ CREATE TABLE `nhanvien`  (
   PRIMARY KEY (`MSNV`)
 );
 
+delete from hanghoa where MSHH='b';
 select * from hanghoa;
 drop table hanghoa;
 CREATE TABLE `hanghoa`  (
@@ -36,9 +37,10 @@ CREATE TABLE `hanghoa`  (
   CONSTRAINT `fk_MaLoaiHang_MaLoai_LoaiHang` FOREIGN KEY (`MaLoaiHang`) REFERENCES `loaihanghoa` (`MaLoaiHang`) ON DELETE RESTRICT ON UPDATE CASCADE
 );
 
-select * from hinhminhhoa;
-drop table hinhminhhoa;
-CREATE TABLE `hinhminhhoa`(
+INSERT INTO hinhhanghoa(MSHH,tenhinh,mahinh) VALUE('1','overview.jpg','overview.jpg');INSERT INTO hinhhanghoa(MSHH,tenhinh,mahinh) VALUE('1','qqqqqqqqq.png','qqqqqqqqq.png')
+select * from hinhhanghoa;
+drop table hinhhanghoa;
+CREATE TABLE `hinhhanghoa`(
 	`MaHinh` int(11) NOT NULL AUTO_INCREMENT, 
     `TenHinh` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NULL DEFAULT NULL,
     `MSHH` varchar(11) NOT NULL,
@@ -47,6 +49,7 @@ CREATE TABLE `hinhminhhoa`(
 	CONSTRAINT `fk_MSHH_MSHH_hanghoa` FOREIGN KEY (`MSHH`) REFERENCES `hanghoa` (`MSHH`) ON DELETE RESTRICT ON UPDATE CASCADE
 );
 
+INSERT INTO hinhhanghoa(MSHH,tenhinh,MaHinh) VALUE('b','../../../image/qqqqqqqqq.png','../../../image/qqqqqqqqq.png');
 select * from khachhang;
 drop table khachhang;
 delete from khachhang where MSKH=1;

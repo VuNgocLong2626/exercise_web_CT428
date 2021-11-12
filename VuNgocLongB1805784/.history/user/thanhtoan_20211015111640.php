@@ -43,7 +43,7 @@
         $row = $result->fetch_assoc();
         echo '
         <h2 style="margin-top: 50px;">Thông tin</h2>
-        <form name="xacnhandathang" method="post" action="process/process_thanhtoan.php">
+        <form name="xacnhandathang" method="post" action="process_thanhtoan.php">
             <div class="mb-3 row">
                 <label class="col-sm-2 col-form-label">Họ và tên</label>
                 <div class="col-sm-10">

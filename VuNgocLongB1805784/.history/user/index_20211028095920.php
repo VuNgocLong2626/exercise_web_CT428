@@ -21,7 +21,7 @@
                 <a href="index.php?action=giohang" class="btn btn-outline-secondary" style="margin-right: 20px; ">Giỏ Hàng</a>
                 <?php 
                     if (isset($_SESSION['username_dangnhap'])){
-                        echo '<a href="process/process_dangnhap_dangxuat.php?process=1" class="btn btn-outline-secondary" style="margin-right: 20px; ">Đăng xuất</a>';
+                        echo '<a href="process_dangnhap_dangxuat.php?process=1" class="btn btn-outline-secondary" style="margin-right: 20px; ">Đăng xuất</a>';
                         echo '<a href="index.php?action=thongtin" style="margin-right: 20px; text-decoration: none; color: #6c757d; padding-top: 8px;">'.$_SESSION['username_dangnhap'].'</a>';
                     }
                     else{
